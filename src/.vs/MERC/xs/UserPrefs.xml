@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}|Default">
+  <MonoDevelop.Ide.ItemProperties.MERC PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MERC" expanded="True">
+            <Node name="MERC" expanded="True">
+              <Node name="Instructions" expanded="True">
+                <Node name="ITypes" expanded="True">
+                  <Node name="BranchInstructions" expanded="True" />
+                </Node>
+                <Node name="RTypes" expanded="True">
+                  <Node name="Compare.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

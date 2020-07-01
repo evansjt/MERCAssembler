@@ -1,0 +1,18 @@
+.globl main			# Make main, A, and h globl so you can
+.globl A			# refer to them by name.
+
+.data				# Data section of the program
+
+A:	.word	1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43
+
+.text
+
+main:				# Label that marks the start of our function
+	lui	$t0, A		# Register $t0 gets address of A
+    lli $t0, A
+
+	load $t1, $t0, 0     # Register $t1 gets A[0]
+	load $t2, $t0, 4     # Register $t2 gets A[2]
+
+    store $t2, $t0, 0     # A[0] gets value of $t2
+    store $t1, $t0, 4     # A[2] gets value of $t1

@@ -1,0 +1,15 @@
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/bin/Debug/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/bin/Debug/MERC.pdb
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/obj/Debug/MERC.csprojAssemblyReference.cache
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/obj/Debug/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/obj/Debug/MERC.pdb
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/MERC/obj/Debug/MERC.csprojAssemblyReference.cache
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/MERC/obj/Debug/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/MERC/obj/Debug/MERC.pdb
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/MERC/bin/Debug/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/MERC/bin/Debug/MERC.pdb
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/src/MERC/bin/Debug/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/src/MERC/bin/Debug/MERC.pdb
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/src/MERC/obj/Debug/MERC.csprojAssemblyReference.cache
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/src/MERC/obj/Debug/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC Assembler/src/MERC/obj/Debug/MERC.pdb

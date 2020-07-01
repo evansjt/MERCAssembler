@@ -1,0 +1,2 @@
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/bin/Release/MERC.exe
+/Users/evansjt/Documents/202010_Fall19/CSSE232/MERC/MERC/obj/Release/MERC.exe

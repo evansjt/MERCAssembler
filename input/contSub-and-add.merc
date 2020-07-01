@@ -1,0 +1,19 @@
+.globl while
+.globl addLoop
+.globl done
+
+.text
+	addi $t0, $0, 6		# t0 = 6
+	addi $t1, $0, 1		# t1 = 1
+	addi $t2, $0, 2		# t2 = 2
+	addi $s0, $0, 5		# s0 = 5
+while:
+	beq $t0, $t1, done	# while loop is done when $t0 = 1
+	sub $t0, $t0, $t2	# subtract t0 by 2
+	beq $t0, $0, addLoop	# if t0 reaches 0, add t0 up to 15
+	j while			# repeat while loop
+addLoop:
+	beq $t0, $s0, while	# go back to the while loop when t0 = 15
+	addi $t0, $t0, 1	# continuously add one to t0
+	j addLoop			# repeat add loop
+done:

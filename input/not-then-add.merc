@@ -1,0 +1,5 @@
+.text
+	add $t0, $arg0, $0
+	not	$s0, $t0	# t0 contains the binary value 1010, so s0 has the value 0101
+	not	$s1, $s0	# s1 contains the binary value 1010
+	add	$s2, $s0, $s1	# s2 contains the binary value 1111

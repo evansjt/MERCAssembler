@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MERC</RootNamespace>
+    <AssemblyName>MERC</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Registers\Register.cs" />
+    <Compile Include="Instructions\Instruction.cs" />
+    <Compile Include="Instructions\RTypeInstruction.cs" />
+    <Compile Include="Instructions\ITypeInstruction.cs" />
+    <Compile Include="Instructions\JTypeInstruction.cs" />
+    <Compile Include="Instructions\LTypeInstruction.cs" />
+    <Compile Include="Instructions\RTypes\Add.cs" />
+    <Compile Include="Registers\ZeroRegister.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Registers\ConcreteRegister.cs" />
+    <Compile Include="Instructions\ITypes\Addi.cs" />
+    <Compile Include="Instructions\RTypes\And.cs" />
+    <Compile Include="Instructions\JTypes\Jump.cs" />
+    <Compile Include="Instructions\JTypes\Call.cs" />
+    <Compile Include="Instructions\RTypes\Compare.cs" />
+    <Compile Include="Instructions\RTypes\JumpRegister.cs" />
+    <Compile Include="Instructions\ITypes\LoadWord.cs" />
+    <Compile Include="Instructions\RTypes\NOp.cs" />
+    <Compile Include="Instructions\RTypes\Not.cs" />
+    <Compile Include="Instructions\RTypes\Or.cs" />
+    <Compile Include="Instructions\ITypes\Sll.cs" />
+    <Compile Include="Instructions\ITypes\Srl.cs" />
+    <Compile Include="Instructions\ITypes\StoreWord.cs" />
+    <Compile Include="Instructions\RTypes\Subtract.cs" />
+    <Compile Include="Instructions\LTypes\LoadLowerImm.cs" />
+    <Compile Include="Instructions\LTypes\LoadUpperImm.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstruction.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstructions\Beq.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstructions\Bget.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstructions\Bgt.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstructions\Blet.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstructions\Blt.cs" />
+    <Compile Include="Instructions\ITypes\BranchInstructions\Bne.cs" />
+    <Compile Include="InstructionRunner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Registers\" />
+    <Folder Include="Instructions\" />
+    <Folder Include="Instructions\ITypes\" />
+    <Folder Include="Instructions\JTypes\" />
+    <Folder Include="Instructions\LTypes\" />
+    <Folder Include="Instructions\RTypes\" />
+    <Folder Include="Instructions\ITypes\BranchInstructions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

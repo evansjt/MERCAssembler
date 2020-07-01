@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}|Default">
+  <MonoDevelop.Ide.ItemProperties.MERC PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MERC/Program.cs">
+    <Files>
+      <File FileName="MERC/Program.cs" Line="137" Column="76" />
+      <File FileName="MERC/Parser.cs" Line="2" Column="34" />
+      <File FileName="MERC/Globals.cs" Line="18" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MERC" expanded="True">
+            <Node name="MERC" expanded="True">
+              <Node name="Instructions" expanded="True">
+                <Node name="ITypes" expanded="True" />
+                <Node name="JTypes" expanded="True" />
+                <Node name="LTypes" expanded="True" />
+                <Node name="RTypes" expanded="True" />
+              </Node>
+              <Node name="Registers" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MERC", "MERC\MERC.csproj", "{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B5D67D95-55FD-491C-82E2-51C5B24F1E6E}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

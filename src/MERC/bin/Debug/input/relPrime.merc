@@ -1,0 +1,47 @@
+.globl relprime
+.globl while1
+.globl return1
+.globl gcd
+.globl while2
+.globl return2
+.globl done
+
+.text
+    addi $arg0, $0, 5
+    call relprime
+    j done
+relprime:
+    addi $t0, $0, 2 #t0 is m
+while1:
+    add $arg1, $t0, $0  # Set m as argument 0
+    addi $sp, $sp, -4   # Allocate space on the stack
+    store $sp, $t0, 0   # Store m on the stack
+    store $sp, $ra, 2   # Store return address
+    call gcd            # Call gcd function
+    addi $t1, $0, 1     # Branch to return if return value is 1
+    beq $rv0, $t1, return1    # Branch to return1 if return value is 1
+    load $t0, $sp, 0    # Loading m into t0
+    add $t0, $t0, $t1   # Increment m by 1
+    j while1            # Jump to while1
+    add $rv0, $t0, $0   # Store result in return value register
+return1:
+    load $ra, $sp, 2    # Restore the original return address
+    addi, $sp, $sp, 4   # Restore the stack
+    jr $ra              # Return
+gcd:
+    bne $arg0, $0, while2    # Set return value to b
+    add $rv0, $arg1, $0 # Set return value to b
+    jr $ra              # Return
+while2:
+    add $t1, $arg0, $0  # Puts a into register t1
+    add $t2, $arg1, $0  # Puts b into register t2
+    beq $t2, $0, return2      # Branch to return2 if b = 0
+    blet $t1, $t2, 2    # Branch to else if a <= 0
+    sub $arg0, $t1, $t2   # Set a to a - b
+    j while2            # Jump to while2
+    sub $arg1, $t2, $t1   # Set b to b - a
+    j while2            # Jump to while2
+return2:
+    add $rv0, $t1, $0   # Set return value to a
+    jr $ra              # Return
+done:
